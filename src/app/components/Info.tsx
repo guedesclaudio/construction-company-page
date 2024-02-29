@@ -1,8 +1,5 @@
 "use client";
-import { IoIosBed } from "react-icons/io";
-import { FaShower } from "react-icons/fa";
-import { FaCar } from "react-icons/fa";
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { infoData } from "../data/info";
 
 export default function Info() {
@@ -10,8 +7,8 @@ export default function Info() {
         <BoxDiv>
             <Content>
                 {
-                    infoData?.map((v) => (
-                        <A>
+                    infoData?.map((v, i) => (
+                        <A key={i}>
                             <Chunk background={v.background}>
                                 {v.icon()}
                                 <Text>{v.title}</Text>
@@ -62,7 +59,6 @@ const Chunk = styled.div<any>`
     flex-direction: column;
     color: white;
     background: rgb(0,212,255);
-    opacity: 0.7;
     background: ${(props: any) => props.background || 'black'};
 `;
 

@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Box from "./components/Box";
+import Box from "./components/TopBox";
 import Info from "./components/Info";
 import Map from "./components/Map";
-
 
 export default function Home() {
   return (
