@@ -9,7 +9,7 @@ export const infoData = [
         h1Color: '#06f3b8',
         title: '2 quartos',
         h1: 'Quartos',
-        p: 'A unidade conta com 2 súites. A primeira possui 16 metros e a segunda tem 11 metros.'
+        p: 'A unidade conta com 2 suites. A primeira possui 16 metros e a segunda tem 11 metros.'
     },
     {
         icon: () => <FaShower style={{fontSize: '26px'}}/>,
